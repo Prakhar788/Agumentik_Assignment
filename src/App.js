@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Banner from './components/Banner';
-import Fotter from './components/Fotter';
+import Footer from './components/Footer';
 import Trello from './components/Trello';
 import Header from './components/Header';
 
@@ -11,7 +11,7 @@ function App() {
       <Banner></Banner>
       <Trello></Trello>
       <Header/>
-      <Fotter></Fotter>
+      <Footer></Footer>
     </div>
   );
 }
