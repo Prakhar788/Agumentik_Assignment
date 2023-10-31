@@ -39,8 +39,8 @@ const Trello = () => {
     <Card  onClick={() => handleCardClick(Pic3)} /> 
   </div>
   <div className="main-div">
-                        <img src={selectedPic} />
-                    </div>
+  <img className='image' src={selectedPic} />
+  </div>
 </div>
       </section>
       

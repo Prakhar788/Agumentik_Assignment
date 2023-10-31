@@ -182,7 +182,12 @@
     margin: 20px;
     padding: 70px;
 }
-
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 940px) {
+.navbar{
+   display: none;
+}
+}
 /* Media query for screens smaller than 600px */
 @media screen and (max-width: 600px) {
     .banner {
@@ -265,5 +270,8 @@
     .comph1 {
         margin-right: 50px;
         font-size: 30px;
+    }
+    .navbar{
+        display: none;
     }
 }

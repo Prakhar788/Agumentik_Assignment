@@ -69,3 +69,18 @@
     box-shadow: 0 8px 24px rgba(29, 139, 242, 0.459);
     border-radius: 10px;
   }
+
+  /* Media query for screens smaller than 600px */
+@media screen and (max-width: 940px) {
+  .vid{
+    flex-direction: column;
+  }
+  .navigation{
+    flex-direction: column;
+  }
+  }
+  /* Media query for screens smaller than 600px */
+  @media screen and (max-width: 600px) {
+      
+  }
+  
