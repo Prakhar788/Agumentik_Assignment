@@ -133,7 +133,6 @@
     padding-left: 30px;
     transition: transform 300ms ease;
     z-index: 5;
-    line-height: 2px;
   }
   
   .notification:hover .notibody {
