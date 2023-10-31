@@ -1,61 +1,52 @@
+
 import React, { useState } from 'react';
-import './Trello.css'
-import img1 from './Screenshot (80).png'
-import img2 from './Screenshot (79).png'
-import img3 from './Screenshot (81).png'
 
-export default function Trello() {
-    const [currentImage, setCurrentImage] = useState(0);
+import './TrelloSec.css'
+import Pic1 from "../assets/1pic.jpg"
+import Pic2 from "../assets/2pic.jpg"
+import Pic3 from "../assets/3pic.jpg"
 
-    const handleSectionClick = (index) => {
-        // Update the currentImage state to show the corresponding image
-        setCurrentImage(index);
-    }
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
-    return (
-        <>
-            <div className="trello">
-                <div className="top">
-                    <h3>Trello 101</h3>
-                    <h2>A productivity powerhouse</h2>
-                    <div className="size">
-                        <p>Simple, flexible, and powerful. All it takes are boards, lists, and cards to get a clear view of who's doing what and what needs to get done. Learn more in our <span> guide for getting started.</span></p>
+// import Comp2 from './Comp2'
+import Card from './Card'
+
+
+const Trello = () => {
+    const [selectedPic, setSelectedPic] = useState(Pic1);
+
+    const handleCardClick = (pic) => {
+        setSelectedPic(pic);
+    };
+  return (
+    <>
+    
+      <section className='main-section'>
+      <div className='main-heading'>
+    <div className='heading'>TRELLO 101</div>
+    <div className='para'>A productivity powerhouse</div>
+    <div className='para2'>Simple, flexible, and powerful. All it takes are boards, lists, and cards to get a clear view of who’s doing what and what needs to get done. Learn more in our <a>guide for getting started.</a>
+
+
+</div>
+</div>
+<div className='sub-section'>
+  <div className='cards'>
+    
+    <Card  onClick={() => handleCardClick(Pic1)} />
+    <Card  onClick={() => handleCardClick(Pic2)}  />
+    <Card  onClick={() => handleCardClick(Pic3)} /> 
+  </div>
+  <div className="main-div">
+                        <img src={selectedPic} />
                     </div>
-                </div>
-                <div className="bottom">
-                    <div className="tleft">
-                        <div className={`one1 ${currentImage === 0 ? 'active' : ''}`} onClick={() => handleSectionClick(0)}>
-                            <h3>Board</h3>
-                            <p>Trello boards keep tasks organized and work moving forward. In a glance, see everything from "things to do" to "aww yeah, we did it!"</p>
-                        </div>
-                        <div className={`two2 ${currentImage === 1 ? 'active' : ''}`} onClick={() => handleSectionClick(1)}>
-                            <h3>List</h3>
-                            <p>Trello boards keep tasks organized and work moving forward. In a glance, see everything from "things to do" to "aww yeah, we did it!"</p>
-                        </div>
-                        <div className={`three3 ${currentImage === 2 ? 'active' : ''}`} onClick={() => handleSectionClick(2)}>
-                            <h3>Cards</h3>
-                            <p>Trello boards keep tasks organized and work moving forward. In a glance, see everything from "things to do" to "aww yeah, we did it!"</p>
-                        </div>
-                    </div>
-                    <div className="tright">
-                        <img
-                            src={img1}
-                            alt=""
-                            style={{ display: currentImage === 0 ? 'block' : 'none' }}
-                        />
-                        <img
-                            src={img2}
-                            alt=""
-                            style={{ display: currentImage === 1 ? 'block' : 'none' }}
-                        />
-                        <img
-                            src={img3}
-                            alt=""
-                            style={{ display: currentImage === 2 ? 'block' : 'none' }}
-                        />
-                    </div>
-                </div>
-            </div>
-        </>
-    );
+</div>
+      </section>
+      
+    </>
+
+  )
 }
+
+export default Trello;

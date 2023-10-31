@@ -55,7 +55,7 @@ const Banner = () => {
                 </div>
 
                 <div className='iso'>
-                    <img className='img-iso' src={img} />
+                    <img className='img-iso' alt='' src={img} />
                 </div>
 
                 <div className='midle-banner-txt'>

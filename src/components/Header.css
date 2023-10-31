@@ -1,0 +1,70 @@
+.monday{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .navigation{
+    display: flex;
+    box-shadow: 0 8px 24px rgba(29,140,242,0.16);
+  }
+  .tit{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .tit:hover{
+    background-color: rgb(236, 243, 253);
+  }
+  .navigation a{
+    text-decoration: none;
+  }
+  .navigation a:active{
+    text-decoration: none;
+    border-bottom: 10px solid rgba(74, 107, 240, 0.588);
+  border-radius: 5px;
+
+  }
+  .tit p{
+    font-size: 1rem;
+    color: rgba(10, 36, 60, 0.337);
+  }
+  .tit >img{
+    padding-bottom: 15px;
+  }
+  .monday>h1{
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  .monday>p{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.414);
+    padding-bottom:50px ;
+  }
+  .vid{
+    background-color: rgba(255, 255, 255, 0.16);
+    display: block;
+    height: 1000px;
+    width: 90%;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .vid-text{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+  }
+  .vid-text h2{
+    color:rgba(33, 33, 255, 0.873);
+  }
+  .video-main{
+    box-shadow: 0 8px 24px rgba(29, 139, 242, 0.459);
+    border-radius: 10px;
+  }
